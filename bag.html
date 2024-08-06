@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kymall</title>
+
+    <link rel="shortcut icon" href="images/klogo.png" type="image/x-icon" />
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <section class="pc-header">
+        <div class="menu-and-logo">
+          <a href="/index.html" class="logo">
+            <img src="images/klogo.png" alt="logo" />
+          </a>
+
+          <div id="main-menu" class="pc-menu">
+            <a href=""><h6>Men</h6></a>
+            <a href=""><h6>Women</h6></a>
+            <a href=""><h6>Kids</h6></a>
+            <a href=""><h6>Home & LIving</h6></a>
+            <a href=""><h6>Beauty</h6></a>
+            <a href=""><h6>Studio</h6></a>
+          </div>
+        </div>
+
+        <div class="search-and-others">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search for Products, Brands and more..."
+            />
+            <span class="search-icon">
+              <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </span>
+          </div>
+
+          <div class="other-icons">
+            <span class="icon profile">
+              <button><i class="fa-regular fa-user"></i></button>
+            </span>
+            <span class="icon wishlist">
+              <button><i class="fa-regular fa-heart"></i></button>
+            </span>
+            <span class="icon bag">
+              <button>
+                <a href="/bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+              </button>
+              <span class="bag-label">0</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile-header">
+        <button id="toggle-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="menu-container">
+          <a href=""><h6>Men</h6></a>
+          <a href=""><h6>Women</h6></a>
+          <a href=""><h6>Kids</h6></a>
+          <a href=""><h6>Home & Living</h6></a>
+          <a href=""><h6>Beauty</h6></a>
+          <a href=""><h6>Studio</h6></a>
+        </div>
+
+        <div class="logo">
+          <img src="images/klogo.png" alt="logo" />
+        </div>
+
+        <div class="other-icons">
+          <span class="icon profile">
+            <button><i class="fa-regular fa-user"></i></button>
+          </span>
+          <span class="icon wishlist">
+            <button><i class="fa-regular fa-heart"></i></button>
+          </span>
+          <span class="icon bag">
+            <button>
+              <a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </button>
+            <span class="bag-label">0</span>
+          </span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="main">
+        <div class="bag-items">
+          <!-- <div class="bag-item">
+            <img src="images/1.jpeg" alt="item image" />
+            <div class="description">
+              <div class="company-name">
+                <p>RedGear</p>
+              </div>
+              <div class="item-name">
+                <p>Shadow Blade</p>
+              </div>
+              <div class="price">
+                <span class="current-price">Rs 800</span>
+                <span class="real-price">Rs 900</span>
+                <span class="offer">10</span>
+              </div>
+              <div class="delivery">
+                <p>Delivery by 10 Nov 2023</p>
+              </div>
+
+              <div class="cross">
+                <button onclick="removeItem()"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="bill">
+          <p>PRICE DETAILS</p>
+          <div class="prices">
+            <p>Total MRP</p>
+            <p class="sub-total">Rs 2000</p>
+          </div>
+          <div class="prices">
+            <p>Discount on MRP</p>
+            <p class="total-discount">-Rs 200</p>
+          </div>
+          <div class="prices">
+            <p>Convenience Fee</p>
+            <p>Rs 99</p>
+          </div>
+          <hr />
+          <div class="prices">
+            <p>Total Amount</p>
+            <p class="grand-total">Rs 1899</p>
+          </div>
+          <button class="place-order">Place Order</button>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/4d686d0155.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="items.js"></script>
+    <script src="script.js"></script>
+    <script src="bag.js"></script>
+  </body>
+</html>
