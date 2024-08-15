@@ -25,12 +25,9 @@
           </div>
 
           <div id="main-menu" class="pc-menu">
-            <a href=""><h6>Men</h6></a>
-            <a href=""><h6>Women</h6></a>
-            <a href=""><h6>Kids</h6></a>
-            <a href=""><h6>Home & LIving</h6></a>
-            <a href=""><h6>Beauty</h6></a>
-            <a href=""><h6>Studio</h6></a>
+            <button onclick=""><h6>Men</h6></button>
+            <button onclick=""><h6>Women</h6></button>
+            <button onclick=""><h6>Kids</h6></button>
           </div>
         </div>
 
@@ -48,17 +45,11 @@
           </div>
 
           <div class="other-icons">
-            <span class="icon profile">
-              <button><i class="fa-regular fa-user"></i></button>
-            </span>
-            <span class="icon wishlist">
-              <button><i class="fa-regular fa-heart"></i></button>
-            </span>
             <span class="icon bag">
               <button>
                 <a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <span class="bag-label">0</span>
               </button>
-              <span class="bag-label">0</span>
             </span>
           </div>
         </div>
@@ -72,12 +63,9 @@
         </button>
 
         <div id="menu-container">
-          <a href=""><h6>Men</h6></a>
-          <a href=""><h6>Women</h6></a>
-          <a href=""><h6>Kids</h6></a>
-          <a href=""><h6>Home & Living</h6></a>
-          <a href=""><h6>Beauty</h6></a>
-          <a href=""><h6>Studio</h6></a>
+          <button onclick=""><h6>Men</h6></button>
+          <button onclick=""><h6>Women</h6></button>
+          <button onclick=""><h6>Kids</h6></button>
         </div>
 
         <div class="logo">
@@ -85,23 +73,56 @@
         </div>
 
         <div class="other-icons">
-          <span class="icon profile">
-            <button><i class="fa-regular fa-user"></i></button>
-          </span>
-          <span class="icon wishlist">
-            <button><i class="fa-regular fa-heart"></i></button>
-          </span>
           <span class="icon bag">
             <button>
               <a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+              <span class="bag-label">0</span>
             </button>
-            <span class="bag-label">0</span>
           </span>
         </div>
       </section>
     </header>
 
     <main>
+      <div class="filters-container">
+        <div class="filter">
+          <h4>Price</h4>
+          <label>
+            <input type="radio" name="price" value="low-to-high" /> Low to High
+          </label>
+          <label>
+            <input type="radio" name="price" value="high-to-low" /> High to Low
+          </label>
+        </div>
+    
+        <div class="filter">
+          <h4>Top Trending</h4>
+          <label>
+            <input type="checkbox" name="top-trending" value="trending" /> Show
+            Trending Items
+          </label>
+        </div>
+    
+        <div class="filter">
+          <h4>Ratings</h4>
+          <label>
+            <input type="radio" name="ratings" value="4-and-up" /> 4 & Up
+          </label>
+          <label>
+            <input type="radio" name="ratings" value="3-and-up" /> 3 & Up
+          </label>
+          <label>
+            <input type="radio" name="ratings" value="2-and-up" /> 2 & Up
+          </label>
+          <label>
+            <input type="radio" name="ratings" value="1-and-up" /> 1 & Up
+          </label>
+        </div>
+
+        <div class="remove-filters">
+          <button>Remove Filters</button>
+        </div>
+      </div>
       <div class="item-container">
         <!-- 
           

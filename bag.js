@@ -69,6 +69,9 @@ function bagSummary(){
   let subTotal = 0;
   let totalDiscount = 0; 
   let discount;
+  let convenience;
+
+  bagItems.length==0 ? convenience=0 : convenience=99;
 
   newArray.forEach(element => {
     discount=0;
@@ -76,10 +79,11 @@ function bagSummary(){
     discount = element.price.current * (element.price.offer/100);
     totalDiscount += discount;
   });
-  let grandTotal = subTotal - totalDiscount + 99;
+  let grandTotal = subTotal - totalDiscount + convenience;
 
   
   document.querySelector('.sub-total').innerText = 'Rs' + subTotal;
   document.querySelector('.total-discount').innerText = '-Rs' + totalDiscount;
+  document.querySelector('.convenience').innerText = 'Rs' + convenience;
   document.querySelector('.grand-total').innerText = 'Rs' + grandTotal;
 }

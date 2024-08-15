@@ -1,303 +1,482 @@
 let items = [
-    {
-        id: '001',
-        image: 'images/1.jpeg',
-        ratings: {
-            stars: 4.5,
-            reviews: 5000,
-        },
-        company: 'FashionHub',
-        name: 'Casual Jeans',
-        price: {
-            current: 800,
-            real: 900,
-            offer: 42,
-        }
+  {
+    id: "001",
+    image: "images/1.jpeg",
+    ratings: {
+      stars: 4.5,
+      reviews: 5000,
     },
-    {
-        id: '002',
-        image: 'images/2.jpeg',
-        ratings: {
-            stars: 4.2,
-            reviews: 4800,
-        },
-        company: 'TrendyStyles',
-        name: 'Summer Dress',
-        price: {
-            current: 750,
-            real: 850,
-            offer: 12,
-        }
+    company: "FashionHub",
+    name: "Casual Jeans",
+    price: {
+      current: 800,
+      real: 900,
+      offer: 42,
     },
-    {
-        id: '003',
-        image: 'images/3.jpeg',
-        ratings: {
-            stars: 4.0,
-            reviews: 4200,
-        },
-        company: 'FabWear',
-        name: 'Formal Shirt',
-        price: {
-            current: 700,
-            real: 800,
-            offer: 12,
-        }
+    category: "Men",
+  },
+  {
+    id: "002",
+    image: "images/2.jpeg",
+    ratings: {
+      stars: 4,
+      reviews: 4800,
     },
-    {
-        id: '004',
-        image: 'images/4.jpeg',
-        ratings: {
-            stars: 4.6,
-            reviews: 5600,
-        },
-        company: 'ElegantCloth',
-        name: 'Party Gown',
-        price: {
-            current: 900,
-            real: 950,
-            offer: 5,
-        }
+    company: "TrendyStyles",
+    name: "Summer Dress",
+    price: {
+      current: 750,
+      real: 850,
+      offer: 12,
     },
-    {
-        id: '005',
-        image: 'images/5.jpeg',
-        ratings: {
-            stars: 3.9,
-            reviews: 3200,
-        },
-        company: 'VogueStyles',
-        name: 'Designer Suit',
-        price: {
-            current: 700,
-            real: 800,
-            offer: 12,
-        }
+    category: "Men",
+  },
+  {
+    id: "003",
+    image: "images/3.jpeg",
+    ratings: {
+      stars: 3.2,
+      reviews: 4200,
     },
-    {
-        id: '006',
-        image: 'images/6.jpeg',
-        ratings: {
-            stars: 4.8,
-            reviews: 6800,
-        },
-        company: 'StyleCraze',
-        name: 'Classic Blazer',
-        price: {
-            current: 850,
-            real: 950,
-            offer: 10,
-        }
+    company: "FabWear",
+    name: "Formal Shirt",
+    price: {
+      current: 700,
+      real: 800,
+      offer: 12,
     },
-    {
-        id: '007',
-        image: 'images/7.jpeg',
-        ratings: {
-            stars: 4.3,
-            reviews: 3800,
-        },
-        company: 'TrendyWardrobe',
-        name: 'Denim Jacket',
-        price: {
-            current: 720,
-            real: 800,
-            offer: 10,
-        }
+    category: "Men",
+  },
+  {
+    id: "004",
+    image: "images/4.jpeg",
+    ratings: {
+      stars: 3.6,
+      reviews: 5600,
     },
-    {
-        id: '008',
-        image: 'images/8.jpeg',
-        ratings: {
-            stars: 4.7,
-            reviews: 6200,
-        },
-        company: 'GlamourZone',
-        name: 'Summer Skirt',
-        price: {
-            current: 650,
-            real: 750,
-            offer: 13,
-        }
+    company: "ElegantCloth",
+    name: "Party Gown",
+    price: {
+      current: 900,
+      real: 950,
+      offer: 5,
     },
-    {
-        id: '009',
-        image: 'images/9.jpeg',
-        ratings: {
-            stars: 4.1,
-            reviews: 4100,
-        },
-        company: 'DapperDress',
-        name: `Men's Trousers`,
-        price: {
-            current: 750,
-            real: 850,
-            offer: 12,
-        }
+    category: "Women",
+  },
+  {
+    id: "005",
+    image: "images/5.jpeg",
+    ratings: {
+      stars: 4.9,
+      reviews: 3200,
     },
-    {
-        id: '010',
-        image: 'images/10.jpeg',
-        ratings: {
-            stars: 4.5,
-            reviews: 5500,
-        },
-        company: 'ChicStyles',
-        name: 'Summer Blouse',
-        price: {
-            current: 680,
-            real: 750,
-            offer: 9,
-        }
+    company: "VogueStyles",
+    name: "Designer Suit",
+    price: {
+      current: 700,
+      real: 800,
+      offer: 12,
     },
-    {
-        id: '011',
-        image: 'images/11.jpeg',
-        ratings: {
-            stars: 4.2,
-            reviews: 4300,
-        },
-        company: 'TrendyCloset',
-        name: 'Party Saree',
-        price: {
-            current: 950,
-            real: 1050,
-            offer: 10,
-        }
+    category: "Women",
+  },
+  {
+    id: "006",
+    image: "images/6.jpeg",
+    ratings: {
+      stars: 2.8,
+      reviews: 6800,
     },
-    {
-        id: '012',
-        image: 'images/12.jpeg',
-        ratings: {
-            stars: 4.8,
-            reviews: 6700,
-        },
-        company: 'ElegantWear',
-        name: 'Wedding Gown',
-        price: {
-            current: 1100,
-            real: 1200,
-            offer: 8,
-        }
+    company: "StyleCraze",
+    name: "Classic Blazer",
+    price: {
+      current: 850,
+      real: 950,
+      offer: 10,
     },
-    {
-        id: '013',
-        image: 'images/13.jpeg',
-        ratings: {
-            stars: 4.4,
-            reviews: 4900,
-        },
-        company: 'CharmStyles',
-        name: 'Silk Kurta',
-        price: {
-            current: 620,
-            real: 700,
-            offer: 11,
-        }
+    category: "Men",
+  },
+  {
+    id: "007",
+    image: "images/7.jpeg",
+    ratings: {
+      stars: 4.3,
+      reviews: 3800,
     },
-    {
-        id: '014',
-        image: 'images/14.jpeg',
-        ratings: {
-            stars: 4.6,
-            reviews: 5300,
-        },
-        company: 'GlamourChic',
-        name: 'Maxi Dress',
-        price: {
-            current: 750,
-            real: 850,
-            offer: 12,
-        }
+    company: "TrendyWardrobe",
+    name: "Denim Jacket",
+    price: {
+      current: 720,
+      real: 800,
+      offer: 10,
     },
-    {
-        id: '015',
-        image: 'images/15.jpeg',
-        ratings: {
-            stars: 4.9,
-            reviews: 6900,
-        },
-        company: 'VogueStyles',
-        name: 'Leather Jacket',
-        price: {
-            current: 850,
-            real: 950,
-            offer: 10,
-        }
+    category: "Men",
+  },
+  {
+    id: "008",
+    image: "images/8.jpeg",
+    ratings: {
+      stars: 3.7,
+      reviews: 6200,
     },
-    {
-        id: '016',
-        image: 'images/16.jpeg',
-        ratings: {
-            stars: 4.3,
-            reviews: 4100,
-        },
-        company: 'TrendyWardrobe',
-        name: 'Cotton Shirt',
-        price: {
-            current: 720,
-            real: 800,
-            offer: 10,
-        }
+    company: "GlamourZone",
+    name: "Summer Skirt",
+    price: {
+      current: 650,
+      real: 750,
+      offer: 13,
     },
-    {
-        id: '017',
-        image: 'images/17.jpeg',
-        ratings: {
-            stars: 4.7,
-            reviews: 6200,
-        },
-        company: 'GlamourZone',
-        name: 'Summer Shorts',
-        price: {
-            current: 650,
-            real: 750,
-            offer: 13,
-        }
+    category: "Women",
+  },
+  {
+    id: "009",
+    image: "images/9.jpeg",
+    ratings: {
+      stars: 4.1,
+      reviews: 4100,
     },
-    {
-        id: '018',
-        image: 'images/18.jpeg',
-        ratings: {
-            stars: 4.1,
-            reviews: 4100,
-        },
-        company: 'DapperDress',
-        name: 'Floral Dress',
-        price: {
-            current: 750,
-            real: 850,
-            offer: 12,
-        }
+    company: "DapperDress",
+    name: `Men's Trousers`,
+    price: {
+      current: 750,
+      real: 850,
+      offer: 12,
     },
-    {
-        id: '019',
-        image: 'images/19.jpeg',
-        ratings: {
-            stars: 4.5,
-            reviews: 5500,
-        },
-        company: 'ChicStyles',
-        name: 'Linen Trousers',
-        price: {
-            current: 680,
-            real: 750,
-            offer: 9,
-        }
+    category: "Men",
+  },
+  {
+    id: "010",
+    image: "images/10.jpeg",
+    ratings: {
+      stars: 4.5,
+      reviews: 5500,
     },
-    {
-        id: '020',
-        image: 'images/20.jpeg',
-        ratings: {
-            stars: 4.2,
-            reviews: 4300,
-        },
-        company: 'TrendyCloset',
-        name: 'Summer Dress',
-        price: {
-            current: 950,
-            real: 1050,
-            offer: 10,
-        }
+    company: "ChicStyles",
+    name: "Summer Blouse",
+    price: {
+      current: 680,
+      real: 750,
+      offer: 9,
     },
+    category: "Women",
+  },
+  {
+    id: "011",
+    image: "images/11.jpeg",
+    ratings: {
+      stars: 3.2,
+      reviews: 4300,
+    },
+    company: "TrendyCloset",
+    name: "Party Saree",
+    price: {
+      current: 950,
+      real: 1050,
+      offer: 10,
+    },
+    category: "Women",
+  },
+  {
+    id: "012",
+    image: "images/12.jpeg",
+    ratings: {
+      stars: 4.8,
+      reviews: 6700,
+    },
+    company: "ElegantWear",
+    name: "Wedding Gown",
+    price: {
+      current: 1100,
+      real: 1200,
+      offer: 8,
+    },
+    category: "Women",
+  },
+  {
+    id: "013",
+    image: "images/13.jpeg",
+    ratings: {
+      stars: 3.4,
+      reviews: 4900,
+    },
+    company: "CharmStyles",
+    name: "Silk Kurta",
+    price: {
+      current: 620,
+      real: 700,
+      offer: 11,
+    },
+    category: "Men",
+  },
+  {
+    id: "014",
+    image: "images/14.jpeg",
+    ratings: {
+      stars: 4.6,
+      reviews: 5300,
+    },
+    company: "GlamourChic",
+    name: "Maxi Dress",
+    price: {
+      current: 750,
+      real: 850,
+      offer: 12,
+    },
+    category: "Women",
+  },
+  {
+    id: "015",
+    image: "images/15.jpeg",
+    ratings: {
+      stars: 3.9,
+      reviews: 6900,
+    },
+    company: "VogueStyles",
+    name: "Leather Jacket",
+    price: {
+      current: 850,
+      real: 950,
+      offer: 10,
+    },
+    category: "Men",
+  },
+  {
+    id: "016",
+    image: "images/16.jpeg",
+    ratings: {
+      stars: 2.3,
+      reviews: 4100,
+    },
+    company: "TrendyWardrobe",
+    name: "Cotton Shirt",
+    price: {
+      current: 720,
+      real: 800,
+      offer: 10,
+    },
+    category: "Men",
+  },
+  {
+    id: "017",
+    image: "images/17.jpeg",
+    ratings: {
+      stars: 4.7,
+      reviews: 6200,
+    },
+    company: "GlamourZone",
+    name: "Summer Shorts",
+    price: {
+      current: 650,
+      real: 750,
+      offer: 13,
+    },
+    category: "Men",
+  },
+  {
+    id: "018",
+    image: "images/18.jpeg",
+    ratings: {
+      stars: 3.1,
+      reviews: 4100,
+    },
+    company: "DapperDress",
+    name: "Floral Dress",
+    price: {
+      current: 750,
+      real: 850,
+      offer: 12,
+    },
+    category: "Women",
+  },
+  {
+    id: "019",
+    image: "images/19.jpeg",
+    ratings: {
+      stars: 4.5,
+      reviews: 5500,
+    },
+    company: "ChicStyles",
+    name: "Linen Trousers",
+    price: {
+      current: 680,
+      real: 750,
+      offer: 9,
+    },
+    category: "Men",
+  },
+  {
+    id: "020",
+    image: "images/20.jpeg",
+    ratings: {
+      stars: 2.2,
+      reviews: 4300,
+    },
+    company: "TrendyCloset",
+    name: "Summer Dress",
+    price: {
+      current: 950,
+      real: 1050,
+      offer: 10,
+    },
+    category: "Women",
+  },
+  {
+    id: "021",
+    image: "images/21.avif",
+    ratings: {
+      stars: 4.6,
+      reviews: 3000,
+    },
+    company: "TinyTrends",
+    name: "Kids T-Shirt",
+    price: {
+      current: 400,
+      real: 450,
+      offer: 11,
+    },
+    category: "Kids",
+  },
+  {
+    id: "022",
+    image: "images/22.avif",
+    ratings: {
+      stars: 3.8,
+      reviews: 3400,
+    },
+    company: "CuteStyles",
+    name: "Kids Shorts",
+    price: {
+      current: 350,
+      real: 400,
+      offer: 12,
+    },
+    category: "Kids",
+  },
+  {
+    id: "023",
+    image: "images/23.avif",
+    ratings: {
+      stars: 4.7,
+      reviews: 2900,
+    },
+    company: "LittleFashion",
+    name: "Kids Dress",
+    price: {
+      current: 500,
+      real: 550,
+      offer: 9,
+    },
+    category: "Kids",
+  },
+  {
+    id: "024",
+    image: "images/24.avif",
+    ratings: {
+      stars: 3.9,
+      reviews: 3700,
+    },
+    company: "PlayWear",
+    name: "Kids Hoodie",
+    price: {
+      current: 600,
+      real: 650,
+      offer: 8,
+    },
+    category: "Kids",
+  },
+  {
+    id: "025",
+    image: "images/25.webp",
+    ratings: {
+      stars: 2.5,
+      reviews: 3100,
+    },
+    company: "TinyOutfit",
+    name: "Kids Pajamas",
+    price: {
+      current: 300,
+      real: 350,
+      offer: 14,
+    },
+    category: "Kids",
+  },
+  {
+    id: "026",
+    image: "images/26.avif",
+    ratings: {
+      stars: 3.3,
+      reviews: 2700,
+    },
+    company: "FunFashion",
+    name: "Kids Skirt",
+    price: {
+      current: 450,
+      real: 500,
+      offer: 10,
+    },
+    category: "Kids",
+  },
+  {
+    id: "027",
+    image: "images/27.avif",
+    ratings: {
+      stars: 4.6,
+      reviews: 3200,
+    },
+    company: "MiniStyle",
+    name: "Kids Jacket",
+    price: {
+      current: 550,
+      real: 600,
+      offer: 9,
+    },
+    category: "Kids",
+  },
+  {
+    id: "028",
+    image: "images/28.avif",
+    ratings: {
+      stars: 4.4,
+      reviews: 2800,
+    },
+    company: "TrendyTykes",
+    name: "Kids Sweater",
+    price: {
+      current: 500,
+      real: 550,
+      offer: 9,
+    },
+    category: "Kids",
+  },
+  {
+    id: "029",
+    image: "images/29.webp",
+    ratings: {
+      stars: 4.7,
+      reviews: 3300,
+    },
+    company: "LittleStyle",
+    name: "Kids Romper",
+    price: {
+      current: 400,
+      real: 450,
+      offer: 11,
+    },
+    category: "Kids",
+  },
+  {
+    id: "030",
+    image: "images/30.avif",
+    ratings: {
+      stars: 4.8,
+      reviews: 3500,
+    },
+    company: "TinyFashion",
+    name: "Kids Sleepsuits",
+    price: {
+      current: 550,
+      real: 600,
+      offer: 8,
+    },
+    category: "Kids",
+  },
 ];
-
