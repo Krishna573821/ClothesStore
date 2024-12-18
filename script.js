@@ -49,7 +49,7 @@ function displayItems(category = null) {
   const searchQuery = document.querySelector('.search-bar input').value.toLowerCase();
   if (searchQuery) {
     filteredItems = filteredItems.filter(item => 
-      item.name.toLowerCase().includes(searchQuery) || 
+      item.name.toLowerCase().includes(searchQuery) ||  
       item.company.toLowerCase().includes(searchQuery)
     );
   }
